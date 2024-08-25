@@ -1,4 +1,4 @@
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-PrimeVideo%20X--Ray%20Blocker-brightgreen?style=for-the-badge&logo=google-chrome)](https://chromewebstore.google.com/detail/lefmceknabkjodbjeocajdfhnlelaedc?hl=tr&authuser=0)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Color %20X-%Picker-brightgreen?style=for-the-badge&logo=google-chrome)](https://chromewebstore.google.com/detail/lefmceknabkjodbjeocajdfhnlelaedc?hl=tr&authuser=0)
 
 # Color Picker Chrome Extension
 
