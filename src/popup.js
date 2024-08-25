@@ -108,7 +108,7 @@ loadOptions().then(() => {
 window.oncontextmenu = function () {
   return false;
 };
-
+/*
 document.addEventListener(
   "keydown",
   function (event) {
@@ -124,3 +124,4 @@ document.addEventListener(
   },
   false
 );
+*/
