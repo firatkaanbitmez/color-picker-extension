@@ -1,4 +1,4 @@
-[![Chrome Web Store](https://img.shields.io/badge/Download-Chrome%20Web%20Store-brightgreen.svg?style=for-the-badge&logo=google-chrome)](https://chromewebstore.google.com/)
+[![Chrome Web Store](https://img.shields.io/badge/Download-Chrome%20Web%20Store-brightgreen.svg?style=for-the-badge&logo=google-chrome)]([https://chromewebstore.google.com/](https://chromewebstore.google.com/detail/color-picker/lefmceknabkjodbjeocajdfhnlelaedc?authuser=0)
 
 # Color Picker Chrome Extension
 
@@ -20,7 +20,7 @@
 
 #### Install from Chrome Web Store
 
-You can easily install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/).
+You can easily install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/color-picker/lefmceknabkjodbjeocajdfhnlelaedc?authuser=0).
 
 #### Manual Installation Using Source Code
 
