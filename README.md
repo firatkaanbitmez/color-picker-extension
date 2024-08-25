@@ -21,7 +21,7 @@
 
 #### Install from Chrome Web Store
 
-You can easily install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/lefmceknabkjodbjeocajdfhnlelaedc?hl=tr&authuser=0).
+You can easily install the extension directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/color-picker/lefmceknabkjodbjeocajdfhnlelaedc?authuser=0&hl=tr).
 
 #### Manual Installation Using Source Code
 
