@@ -3,14 +3,17 @@ const clearAllBtn = document.querySelector(".clear-all");
 const colorList = document.querySelector(".all-colors");
 const pickedColors = JSON.parse(localStorage.getItem("picked-colors") || "[]");
 let defaultColorFormat = 'hex'; // Default format is HEX
-let enableNotifications = false; // Default is no notifications
+let copyType = 'hex'; // Default copy type is HEX
 
 // Load saved options from chrome.storage
 const loadOptions = () => {
   return new Promise((resolve) => {
-    chrome.storage.sync.get(['defaultColorFormat', 'enableNotifications'], (options) => {
+    chrome.storage.sync.get(['defaultColorFormat', 'theme', 'copyType'], (options) => {
       defaultColorFormat = options.defaultColorFormat || 'hex';
-      enableNotifications = options.enableNotifications || false;
+      copyType = options.copyType || 'hex';
+      if (options.theme === 'light') {
+        document.body.classList.add('light-theme');
+      }
       resolve(); // Ensure options are fully loaded
     });
   });
@@ -19,20 +22,12 @@ const loadOptions = () => {
 // Function to copy color to clipboard
 const copyColor = (elem) => {
   const colorValue = elem.dataset.color;
-  navigator.clipboard.writeText(colorValue);
-  
-  // Optionally show a notification
-  if (enableNotifications) {
-    chrome.notifications.create({
-      type: "basic",
-      iconUrl: "icons/icon48.png",
-      title: "Color Copied",
-      message: `${colorValue} has been copied to your clipboard.`
-    });
-  }
+  const formattedColor = formatColor(colorValue, copyType);
+
+  navigator.clipboard.writeText(formattedColor);
 
   elem.innerText = "Copied!";
-  setTimeout(() => (elem.innerText = colorValue), 1000);
+  setTimeout(() => (elem.innerText = formattedColor), 1000);
 };
 
 // Show picked colors
@@ -46,7 +41,7 @@ const showColors = () => {
             <span class="rect" style="background: ${color}; border: 1px solid ${
         color === "#ffffff" ? "#ccc" : color
       }"></span>
-            <span class="value" data-color="${color}">${formatColor(color)}</span>
+            <span class="value" data-color="${color}">${formatColor(color, defaultColorFormat)}</span>
         </li>
       `
     )
@@ -60,8 +55,8 @@ const showColors = () => {
 };
 
 // Format the color based on user preference (HEX or RGB)
-const formatColor = (color) => {
-  if (defaultColorFormat === 'rgb') {
+const formatColor = (color, format) => {
+  if (format === 'rgb') {
     return hexToRgb(color);
   }
   return color;

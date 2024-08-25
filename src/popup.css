@@ -1,16 +1,32 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --btn-bg-color: #006bb3;
+  --btn-hover-bg-color: #005fa1;
+  --form-bg-color: #1e1e1e;
+  --form-border-color: #333333;
+}
+
+.light-theme {
+  --bg-color: #f9f9f9;
+  --text-color: #000000;
+  --btn-bg-color: #007acc;
+  --btn-hover-bg-color: #005fa1;
+  --form-bg-color: #ffffff;
+  --form-border-color: #cccccc;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .popup {
   width: 400px;
-  background: #f4f4f4;
+  background: var(--form-bg-color);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -21,7 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: #007acc;
+  background: var(--btn-bg-color);
   border-radius: 8px;
 }
 
@@ -33,12 +49,12 @@ body {
   cursor: pointer;
   padding: 12px 24px;
   border-radius: 6px;
-  background: #006bb3;
+  background: var(--btn-bg-color);
   transition: background 0.3s ease;
 }
 
 #color-picker:hover {
-  background: #005fa1;
+  background: var(--btn-hover-bg-color);
 }
 
 .picked-colors {
@@ -91,7 +107,7 @@ body {
   width: 30px;
   border-radius: 5px;
   margin-right: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--form-border-color);
 }
 
 .all-colors .color span {
