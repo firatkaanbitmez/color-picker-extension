@@ -1,4 +1,5 @@
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Color %20X-%Picker-brightgreen?style=for-the-badge&logo=google-chrome)](https://chromewebstore.google.com/detail/lefmceknabkjodbjeocajdfhnlelaedc?hl=tr&authuser=0)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Color%20Picker-brightgreen?style=for-the-badge&logo=google-chrome)]([https://chromewebstore.google.com/detail/tab-sound-manager/eemjdeojofepghfmendnefhijldggpom?authuser=0&hl=tr](https://chromewebstore.google.com/detail/color-picker/lefmceknabkjodbjeocajdfhnlelaedc?authuser=0&hl=tr))
+
 
 # Color Picker Chrome Extension
 
